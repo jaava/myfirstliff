@@ -51,6 +51,10 @@
     }
 
     function logOut() {
+      liff.logout()
+      // ล็อกเอาท์ผู้ใช้
+      window.location.reload() // โหลดหน้าใหม่เพื่ออัปเดตสถานะ
+      // หลังจากล็อกเอาท์แล้ว จะโหลดหน้าใหม่เพื่ออัปเดตสถานะ
     }
 
     function closed() {
