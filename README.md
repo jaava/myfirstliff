@@ -38,3 +38,9 @@ Source code for LIFF v2 online course
 	  <th><img src="https://user-images.githubusercontent.com/1763410/75949422-cb00de00-5ed8-11ea-9e84-d737555cfcef.png" width="100%"></th>
 	</tr>
 </table>
+
+**
+3-8 Bot Link
+
+- ใน Channel Line Login ของเรา ไปตั้งค่าที่ ฺBasic Setting > Add friend option > Linked LINE Official Account แล้วเลือก Official Account (Messaging API) ที่เราสร้างไว้
+- ตั้งค่า LIFF เลือกแอปที่เราสร้างไว้ แล้วไปตั้งค่าที่ Add friend option (ว่าเวลาจะใช้ LIFF จะให้เพิ่มเพื่อนด้วยหรือไม่)
