@@ -69,6 +69,14 @@
     }
 
     function getContext() {
+      document.getElementById("type").append(liff.getContext().type)
+      document.getElementById("viewType").append(liff.getContext().viewType)
+      // แสดง Id จากห้องแชท 1:1
+      document.getElementById("utouId").append(liff.getContext().utouId)
+      // แสดง Id ของห้องแชท
+      document.getElementById("roomId").append(liff.getContext().roomId)
+      // แสดง Id ของกลุ่มแชท
+      document.getElementById("groupId").append(liff.getContext().groupId)
     }
 
     // ใช้เพื่อดึงข้อมูลโปรไฟล์ของผู้ใช้ ซึ่งใช้ async-await เพราะเป็น promise-based API
@@ -102,7 +110,7 @@
       await liff.init({ liffId: "2007769875-QxJ7y1xd" })
       getEnvironment()
       getUserProfile()
-      // getContext()
+      getContext()
       // getFriendship()
       // createUniversalLink()
     }
