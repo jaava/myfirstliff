@@ -48,6 +48,19 @@
     }
 
     async function shareMsg() {
+      await liff.shareTargetPicker({
+        messages: [
+          {
+            type: "text",
+            text: "Hello, this is a message from my LIFF app!"
+          },
+          /* {
+            type: "image",
+            originalContentUrl: "https://example.com/image.jpg",
+            previewImageUrl: "https://example.com/preview.jpg"
+          } */
+        ]
+      })
     }
 
     function logOut() {
