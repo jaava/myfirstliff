@@ -71,7 +71,14 @@
     function getContext() {
     }
 
+    // ใช้เพื่อดึงข้อมูลโปรไฟล์ของผู้ใช้ ซึ่งใช้ async-await เพราะเป็น promise-based API
     async function getUserProfile() {
+      const profile = await liff.getProfile()
+      profile.getElementById("pictureUrl").src = profile.pictureUrl
+      profile.getElementById("userId").append(profile.userId)
+      profile.getElementById("displayName").append(profile.displayName)
+      profile.getElementById("statusMessage").append(profile.statusMessage)
+
     }
 
     function getEnvironment() {
@@ -93,7 +100,7 @@
       // alert("LINE Developers x Skooldio")
       await liff.init({ liffId: "2007769875-QxJ7y1xd" })
       getEnvironment()
-      // getUserProfile()
+      getUserProfile()
       // getContext()
       // getFriendship()
       // createUniversalLink()
