@@ -67,6 +67,7 @@
 
     async function sendMsg() {
       if (liff.getContext().type !== "none") {
+        // ส่งข้อความ/สติกเกอร์ไปยังห้องแชท ได้สูงสุดที่เดียวได้ 5 ข้อความ
         await liff.sendMessages([
           {
             type: "sticker",
