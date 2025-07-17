@@ -60,6 +60,11 @@
     }
 
     function openWindow() {
+      // เปิดหน้าต่างใหม่
+      liff.openWindow({
+        url: "https://line.me",
+        external: true // เปิดในเบราว์เซอร์ภายนอก
+      })
     }
 
     async function getFriendship() {
@@ -68,7 +73,7 @@
       if (!friend.friendFlag) {
         if (confirm("You are not friend with this bot. Do you want to add?")) {
           // ถ้าไม่เป็นเพื่อนกับ Bot จะให้เพิ่มเพื่อน
-          window.location.href = "https://line.me/R/ti/p/@bot"
+          window.location.href = "https://line.me/R/ti/p/@<your_line_id>"
         }
       }
     }
