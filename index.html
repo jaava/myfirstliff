@@ -57,6 +57,10 @@
     }
 
     async function scanCode() {
+      const result = await liff.scanCode()
+      // แสดงผลลัพธ์ที่ได้จากการสแกน
+      document.getElementById("scanCode").append(result.value)
+
     }
 
     function openWindow() {
