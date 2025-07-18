@@ -33,7 +33,6 @@
     }
     async function main() {
       await liff.init({ liffId: "2007769875-QxJ7y1xd" })
-      document.getElementById("isLoggedIn").append(liff.isLoggedIn())
       if (liff.isLoggedIn()) {
         // ถ้าได้ล็อกอินแล้ว จะให้ดึงข้อมูลต่างๆ
         getUserProfile()
